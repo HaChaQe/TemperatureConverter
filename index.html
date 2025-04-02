@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert Temps</title>                                      
+</head>
+
+<body>
+    <h2>Convert Temps</h2>
+    <div class="container">
+        <form name="form" class="form" onsubmit="return false;">
+                <div class="tempInput">
+                    <p>Temperature Value</p>
+                    <input id="temperature" type="number" placeholder="Enter value...">
+                </div>
+                <div class="firstTemp">
+                    <p>From</p>
+                    <select id="fromUnit">
+                        <option value="F">Fahrenheit</option>
+                        <option value="C">Celsius</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </div>
+                <div class="secondTemp">
+                    <p>To</p>
+                    <select id="toUnit">
+                        <option value="F">Fahrenheit</option>
+                        <option value="C">Celsius</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </div>
+                <button id="button" onclick="convert(event)"> Get Converted Value</button>
+                <input type="text" id="result" readonly>
+            </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
